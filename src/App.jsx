@@ -10,7 +10,7 @@ function App() {
   const { isActive } = useSelector(state => state.songs)
   return (
     <>
-      <main className='w-full min-h-screen bg-slate-950  relative'>
+      <main className='w-full min-h-screen bg-slate-950 relative overflow-hidden'>
         <div className='w-full h-20 md:pl-2 bg-slate-950  fixed top-0 z-10'>
             <div className='flex items-center pt-2'>
               <div className="logo text-3xl md:text-5xl">🎧</div>
