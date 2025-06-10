@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 function SongDetails() {
       const {activeSong} = useSelector(state => state.songs)
     return (
-        <div className='flex items-center pl-2'>
+        <div className='flex items-center pl-2  cursor-pointer'>
             <div className="currentSongImage w-10 h-10  md:w-16 md:h-16 rounded-full  bg-red-500">
               <img src={activeSong.images?.coverart} alt="currentSong" className='w-full h-full animate-spin duration-300 ease-linear rotate-180 rounded-full object-cover' />
             </div>

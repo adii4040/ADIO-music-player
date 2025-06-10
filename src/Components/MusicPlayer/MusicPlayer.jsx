@@ -88,21 +88,21 @@ function MusicPlayer() {
 
 
                 <div className='lg:fixed lg:left-[40%] flex flex-col pr-2 md:pt-2'>
-                    <div className="flex items-center justify-center gap-2 md:gap-5 ">
+                    <div className="flex items-center justify-center gap-2 md:gap-5 cursor-pointer ">
                         {currentSongURL && (
                             <audio ref={audioRef} src={currentSongURL} onEnded={handleEnd} volume={volume}></audio>
                         )}
-                        <FaShuffle className={`md:text-xl text-slate-300 ${shuffle ? 'text-red-400' : ''}`} onClick={() => dispatch(shuffleSong())} />
+                        <FaShuffle className={`md:text-xl ${shuffle ? 'text-red-400 ' : 'text-slate-300'}`} onClick={() => dispatch(shuffleSong())} />
                         <TbPlayerTrackPrevFilled className='md:text-2xl text-slate-300' onClick={() => dispatch(prevSong())} />
                         {
                             playing ? <FaCirclePause className='text-3xl text-slate-300' onClick={() => dispatch(togglePlayPause(false))} /> : <FaPlayCircle className='text-3xl text-slate-300' onClick={() => dispatch(togglePlayPause(true))} />
                         }
                         <TbPlayerTrackNextFilled className='md:text-xl text-slate-300' onClick={() => dispatch(nextSong())} />
-                        <FaRepeat className={`md:text-xl text-slate-300 ${repeat ? ' text-red-400  ' : ''}`} onClick={() => dispatch(repeatSong())} />
+                        <FaRepeat className={`md:text-xl ${repeat ? 'text-red-400 ' : 'text-slate-300'}`} onClick={() => dispatch(repeatSong())} />
                     </div>
 
 
-                    <div className="w-screen md:w-80 mx-auto fixed md:static bottom-0 left-0 ">
+                    <div className="w-screen md:w-80 mx-auto fixed md:static bottom-0 left-0">
                         <SeekBar
                             audioRef={audioRef.current}
                             duration={duration}
