@@ -24,8 +24,7 @@ Adio is a modern, responsive music player app built using **React**, **Redux Too
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/adio.git
-   cd adio
+   git clone https://github.com/adii4040/ADIO-music-player
 2. Install dependencies:
     ```bash
     npm install
