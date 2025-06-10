@@ -34,5 +34,21 @@ Adio is a modern, responsive music player app built using **React**, **Redux Too
 4. Start the dev server:
    ```bash
    npm run dev
+## 🌐 Live Demo
+
+👉 [Click here to try Adio live](https://adio-music-app.vercel.app/)
+## 🎯 Motivation
+
+This project was created to deepen my understanding of **state management** with Redux Toolkit and RTK Query. I wanted to build a real-world app with **clean, scalable architecture** and modern features. 
+## 🧠 What I Learned
+
+- Mastered **Redux Toolkit** and **RTK Query** for data and state management
+- Built a clean and maintainable folder structure using best practices
+- Learned how to securely handle API keys with **environment variables**
+- Improved understanding of **React hooks**, conditional rendering, and **responsive design**
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
 
 
