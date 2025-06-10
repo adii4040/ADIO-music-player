@@ -92,13 +92,13 @@ function MusicPlayer() {
                         {currentSongURL && (
                             <audio ref={audioRef} src={currentSongURL} onEnded={handleEnd} volume={volume}></audio>
                         )}
-                        <FaShuffle className={`md:text-xl text-slate-300 ${shuffle ? "text-red-500 " : ''}`} onClick={() => dispatch(shuffleSong())} />
+                        <FaShuffle className={`md:text-xl text-slate-300 ${shuffle ? 'text-red-400' : ''}`} onClick={() => dispatch(shuffleSong())} />
                         <TbPlayerTrackPrevFilled className='md:text-2xl text-slate-300' onClick={() => dispatch(prevSong())} />
                         {
                             playing ? <FaCirclePause className='text-3xl text-slate-300' onClick={() => dispatch(togglePlayPause(false))} /> : <FaPlayCircle className='text-3xl text-slate-300' onClick={() => dispatch(togglePlayPause(true))} />
                         }
                         <TbPlayerTrackNextFilled className='md:text-xl text-slate-300' onClick={() => dispatch(nextSong())} />
-                        <FaRepeat className={`md:text-xl text-slate-300 ${repeat ? ' text-red-500  ' : ''}`} onClick={() => dispatch(repeatSong())} />
+                        <FaRepeat className={`md:text-xl text-slate-300 ${repeat ? ' text-red-400  ' : ''}`} onClick={() => dispatch(repeatSong())} />
                     </div>
 
 
